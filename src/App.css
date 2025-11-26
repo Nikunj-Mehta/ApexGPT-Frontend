@@ -1,0 +1,14 @@
+* { /* The * in CSS is called the universal selector. */
+  color: #ececec;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #212121;
+  display: flex;
+}
