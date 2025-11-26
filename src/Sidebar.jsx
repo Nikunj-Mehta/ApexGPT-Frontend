@@ -2,7 +2,6 @@ import "./Sidebar.css";
 import { useContext, useEffect } from "react";
 import { MyContext } from "./MyContext.jsx";
 import { v1 as uuidv1 } from "uuid";
-import blacklogo from "../assets/blacklogo.png";
 
 function Sidebar() {
   const { allThreads, setAllThreads, currThreadId, setNewChat, setPrompt, setReply, setCurrThreadId, setPrevChats } = useContext(MyContext);
@@ -68,7 +67,7 @@ function Sidebar() {
     <section className="sidebar">
       {/* new chat button  */}
       <button onClick={createNewChat}>
-        <img src={blacklogo} alt="gpt logo" className="logo"></img>
+        <img src="/blacklogo.png" alt="gpt logo" className="logo"></img>
         <span><i className="fa-regular fa-pen-to-square"></i></span>
       </button>
 
