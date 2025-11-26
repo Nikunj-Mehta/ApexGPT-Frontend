@@ -34,7 +34,7 @@ function Chat() {
   
   return (
     <>
-      {newChat && <h1>Start a New Chat!</h1>}
+      {newChat && <h1>What can I help with?</h1>}
       <div className="chats">
         {
           prevChats?.slice(0, -1).map((chat, idx) =>  // -1 because we want to remove the last element 1st from end as we are displaying it word by word with typing effect. prevChats?.slice(0, -1) does NOT remove anything from the original array.
