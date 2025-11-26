@@ -8,7 +8,7 @@ function Sidebar() {
 
   const getAllThreads = async () => {
     try {
-      const response = await fetch("http://localhost:8080/api/thread"); // as we have defined in backend if any req comes on this route send all threads form db.
+      const response = await fetch("http://ec2-13-60-56-164.eu-north-1.compute.amazonaws.com:8080/api/thread"); // as we have defined in backend if any req comes on this route send all threads form db.
       const res = await response.json(); 
       const filteredData = res.map(thread => ({threadId: thread.threadId, title: thread.title})); // to disply it in history we need 2 things, title and thereadId, as we have to access that thread which is clicked. That can be done only by threadId
       // console.log(filteredData); // We are getting them correctly now using .map we are going to display them in history
@@ -34,7 +34,7 @@ function Sidebar() {
     setCurrThreadId(newThreadId); //  Change the currThreadId by the id of thread on which we clicked so that thread with all of it's previous chat will be displayed
 
     try {
-      const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}`); // Send the request to backend and the route defn will handel the rest
+      const response = await fetch(`http://ec2-13-60-56-164.eu-north-1.compute.amazonaws.com:8080/api/thread/${newThreadId}`); // Send the request to backend and the route defn will handel the rest
       const res = await response.json();
       console.log(res); // it will return all the chat history that is entire messages array
       setPrevChats(res);; // as on screen prevChats are getting printed so let's update that so that all the messages of previous thread will be displayed
@@ -47,7 +47,7 @@ function Sidebar() {
 
   const deleteThread = async (threadId) => {
     try {
-      const response = await fetch(`http://localhost:8080/api/thread/${threadId}`, {method: "DELETE"}); // We will send the delete req to th path and it will perform the task
+      const response = await fetch(`http://ec2-13-60-56-164.eu-north-1.compute.amazonaws.com:8080/api/thread/${threadId}`, {method: "DELETE"}); // We will send the delete req to th path and it will perform the task
       const res = await response.json();
       console.log(res);
 
