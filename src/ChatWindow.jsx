@@ -25,7 +25,7 @@ function ChatWindow() {
     };
 
     try {
-      const response = await fetch("http://ec2-13-60-56-164.eu-north-1.compute.amazonaws.com:8080/api/chat", options); // Now we are simply sending our request to backend with options object
+      const response = await fetch("/api/chat", options); // Now we are simply sending our request to backend with options object
       const res = await response.json();
       console.log(res); // This is the response received to us from GROQ api from backend
       setReply(res.reply); // Now we need to update the "reply" state variable and store the res obtained. As we are returning response from backend in reply: "" therefor we did res.reply
