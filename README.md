@@ -1,16 +1,74 @@
-# React + Vite
+# 🚀 ApexGPT — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A clean and minimal React + Vite frontend for **ApexGPT**, a conversational AI chatbot powered by a full CI/CD pipeline and deployed on AWS EC2.
 
-Currently, two official plugins are available:
+🔗 Live Demo: http://ec2-13-60-56-164.eu-north-1.compute.amazonaws.com/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Highlights
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ⚡ Ultra-fast development with **Vite + HMR**
+- 🎨 Simple, focused UI for chat interactions
+- 🌐 Fully deployment-ready (served via NGINX on EC2)
+- 🔌 Easily connects to a backend or LLM API
 
-## Expanding the ESLint configuration
+## 🛠️ Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Clean chat interface with message history
+- Context API for global state management
+- Lightweight, customizable CSS
+- Works seamlessly with backend APIs
+
+## ⚡ Quick Start (Development)
+
+```powershell
+# install dependencies
+npm install
+
+# start dev server
+npm run dev
+```
+
+Build for Production
+
+```powershell
+npm run build
+
+# preview build locally
+npm run preview
+```
+
+---
+
+## 📁 Project Structure
+
+- `src/` — React components & logic
+- `index.html` — root entry
+- `vite.config.js` — Vite configuration
+- `public/` — static assets
+
+## 🧩 Tech Stack
+
+- React
+- Vite
+- Context API
+- Plain CSS Modules
+
+## 🤝 Contributing
+
+1. Fork the repo
+2. Create a feature branch
+3. Open a PR with a short explanation
+
+Please keep changes small and include a brief description of behavior changes.
+
+---
+
+## 🧑‍💻 Author
+
+**Nikunj Mehta**
+
+🔗 LinkedIn: https://www.linkedin.com/in/nikunj-mehta-970412291
+
+---
